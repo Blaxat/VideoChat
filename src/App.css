@@ -1,38 +1,117 @@
+/* App.css */
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #a5c6ac5e;
+}
+
+/* lobby.css */
+h1 {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #25845c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px #a4deb4;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5ab47b;
+}
+
+/* Room.css */
+.room-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.room-container h1 {
+  margin-bottom: 30px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px; 
+  margin: 0px auto;
+}
+
+.video-container .video {
+  position: relative; 
+  width: 500px;
+  height: 375px;
+  border: 1px solid #89b394;
+  border-radius: 10px;
+  box-shadow: 5px 5px #89b394;
+  overflow: hidden;
+  margin-right: 200px;
+}
+
+
+.video-container .video h2 {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #69b093;
   color: white;
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.video-container .video:last-child {
+  margin-right: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-container {
+  display: flex;
+  justify-content: center;
+  background-color: #106f49;
+  width: 100%;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+}
+
+.button-container button {
+  padding: 10px;
+  background-color: #2b794f;
+  color: #34b007;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin: 5px;
+  margin-bottom: 10px;
 }
