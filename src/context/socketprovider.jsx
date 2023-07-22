@@ -10,7 +10,7 @@ export const useSocketContext = () =>{
 };
 
 export const SocketProvider = (props) =>{
-    const socket = useMemo(() => io("https://youchat-60dc.onrender.com"),[]);
+    const socket = useMemo(() => io("https://vidchat-fw2t.onrender.com"),[]);
 
     return(
         <SocketContext.Provider value = {socket}>
